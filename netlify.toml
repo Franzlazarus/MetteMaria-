@@ -1,15 +1,2 @@
 [build]
   publish = "."
-
-[[redirects]]
-  from = "/success/*"
-  to = "/success/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[build.processing.html]
-  pretty_urls = true
