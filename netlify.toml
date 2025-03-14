@@ -1,12 +1,18 @@
 [build]
-  publish = "." # or whatever your publish directory is
-
-[[redirects]]
-  from = "/success.html"
-  to = "/success.html"
-  status = 200
+  publish = "."
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
+
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = true
+
+# This goes in your netlify.toml
+[[forms]]
+  name = "bestelling"
+  success_url = "/success/"
