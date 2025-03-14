@@ -87,11 +87,10 @@
             <h2>Bestel Mimosa</h2>
             <p class="price">Prijs: €22,50 (inclusief verzendkosten)</p>
             
-            <form name="bestelling" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="bestelling" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success/">
+                <!-- Keep only ONE form-name hidden input -->
                 <input type="hidden" name="form-name" value="bestelling">
                 <input type="hidden" name="bot-field">
-                <!-- Add this crucial line -->
-                <input type="hidden" name="form-name" value="bestelling">
                 <input type="hidden" name="success_url" value="https://mettemaria.netlify.app/success/">
                 <input type="hidden" name="product" value="Mimosa">
                 
