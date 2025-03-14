@@ -5,8 +5,8 @@
 
 # Form handling with custom success page
 [[redirects]]
-  from = "/bevestiging"
-  to = "/bevestiging.html"
+  from = "/success"
+  to = "/success.html"
   status = 200
 
 # Handle form submissions

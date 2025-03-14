@@ -296,4 +296,11 @@ a:hover {
 [data-netlify-success="true"] p {
     margin-bottom: 15px;
 }
+
+.bank-details {
+    margin: 25px 0;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 182, 193, 0.3);
+    border-bottom: 1px solid rgba(255, 182, 193, 0.3);
+}
 }
