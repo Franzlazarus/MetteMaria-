@@ -1,0 +1,299 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f25d5d; /* Dark navy blue background */
+    color: #f4f4f4; /* Light text for good readability */
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffb6c1; /* Light pink for headings */
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffb6c1; /* Light pink for headings */
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.content-section {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Images */
+.profile-image {
+    width: 250px;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.02);
+}
+
+.book-cover {
+    width: 300px;
+    height: auto;
+    margin: 30px 0;
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.02);
+}
+
+/* Services */
+.diensten {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-link {
+    color: #ffb6c1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: 2px solid #ffb6c1;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.service-link:hover {
+    background-color: #ffb6c1;
+    color: #2a3950;
+}
+
+/* Media Section */
+.media-links {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.media-list {
+    list-style: none;
+    padding: 0;
+}
+
+.media-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 3px solid #ffb6c1;
+    transition: transform 0.2s ease;
+}
+
+.media-item:hover {
+    transform: translateX(5px);
+}
+
+.media-item a {
+    display: block;
+    color: #ffb6c1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.media-item a:hover {
+    text-decoration: underline;
+}
+
+.media-source {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form */
+.order-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffb6c1;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ffb6c1;
+}
+
+.order-button {
+    background-color: transparent;
+    color: #ffb6c1;
+    border: 2px solid #ffb6c1;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.order-button:hover {
+    background-color: #ffb6c1;
+    color: #2a3950;
+}
+
+/* Highlights */
+.highlight {
+    font-weight: bold;
+    color: #ffb6c1;
+}
+
+/* Links */
+a {
+    color: #ffb6c1;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Separator */
+.separator {
+    width: 70px;
+    height: 3px;
+    background-color: #2a3950;
+    margin: 40px auto;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .media-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .profile-image {
+        margin: 0;
+    }
+    
+    .book-cover {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .service-link {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .media-item {
+        padding: 12px;
+    }
+/* Price styling */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffb6c1; /* Light pink to match headings */
+    text-align: center;
+}
+
+/* Success message styling */
+[data-netlify-success="true"] {
+    display: none; /* Initially hidden, Netlify will show it after submission */
+    margin-top: 40px;
+    padding: 20px;
+    border-left: 3px solid #ffb6c1;
+}
+
+[data-netlify-success="true"] h3 {
+    color: #ffb6c1;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+[data-netlify-success="true"] p {
+    margin-bottom: 15px;
+}
+}

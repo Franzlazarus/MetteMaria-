@@ -1,0 +1,14 @@
+# netlify.toml - Configuration file for Netlify
+
+[build]
+  publish = "/"
+
+# Form handling with custom success page
+[[redirects]]
+  from = "/bevestiging"
+  to = "/bevestiging.html"
+  status = 200
+
+# Handle form submissions
+[build.processing.html]
+  pretty_urls = true
