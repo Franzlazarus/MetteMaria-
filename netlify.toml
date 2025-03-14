@@ -1,0 +1,12 @@
+[build]
+  publish = "." # or whatever your publish directory is
+
+[[redirects]]
+  from = "/success.html"
+  to = "/success.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
